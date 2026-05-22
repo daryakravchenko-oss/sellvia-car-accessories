@@ -187,7 +187,7 @@ button { cursor: pointer; font-family: var(--font); outline: none; border: none;
   text-align: center;
   padding: 120px 24px 0;            /* zero bottom padding — stat-bar provides its own */
 }
-/* Static social-tinted blob (IG purple/pink) behind the H1 */
+/* Static dark-red tinted blob behind the H1 */
 .hero-blob {
   position: absolute;
   inset: 0;                /* fills the whole hero so the gradient mirrors the background */
@@ -195,11 +195,11 @@ button { cursor: pointer; font-family: var(--font); outline: none; border: none;
   z-index: 1;              /* above .hero-collage (z 0) so the blob softly veils + shades the cards */
   filter: blur(40px);
   background: radial-gradient(ellipse at center,
-    rgba(168,85,220,0.55) 0%,       /* center — 100% of current purple, unchanged */
-    rgba(168,85,220,0.48) 10%,
-    rgba(221,42,123,0.32) 22%,      /* pink mid — pulled inward, less reach onto cards */
-    rgba(40,15,70,0.55)   38%,      /* dark-purple band — starts ~20% earlier than before */
-    rgba(15,5,30,0.50)    60%,
+    rgba(140,22,30,0.55)  0%,       /* center — dark red */
+    rgba(140,22,30,0.48)  10%,
+    rgba(178,40,52,0.32)  22%,      /* red mid — pulled inward, less reach onto cards */
+    rgba(60,12,18,0.55)   38%,      /* deep dark-red band */
+    rgba(25,6,10,0.50)    60%,
     rgba(0,0,0,0.25)      82%,
     rgba(0,0,0,0)         100%);    /* edge — 0% black (transparent) */
 }
@@ -228,7 +228,7 @@ button { cursor: pointer; font-family: var(--font); outline: none; border: none;
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(90deg,#feda77 0%,#f58529 25%,#dd2a7b 55%,#8134af 100%);
+  background: linear-gradient(90deg,#2b6cb0 0%,#8b97a5 50%,#c0392b 100%);
   -webkit-mask: linear-gradient(#000,#000) content-box, linear-gradient(#000,#000);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -1982,11 +1982,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   justify-content: center;
   gap: 14px;
   background: linear-gradient(90deg,
-    #700096 0%,
-    #000    25%,
-    #00BFCD 50%,
-    #000    75%,
-    #700096 100%);
+    #41566b 0%,
+    #161d25 25%,
+    #5b7c9d 50%,
+    #161d25 75%,
+    #41566b 100%);
   background-size: 300% 100%;
   animation: topbarShift 16s linear infinite;
   padding: 10px 24px;
@@ -1997,7 +1997,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   letter-spacing: -0.01em;
   text-decoration: none;
 }
-/* Slow seamless pan — gradient starts and ends with #700096 so the loop
+/* Slow seamless pan — gradient starts and ends with #41566b so the loop
    is invisible. ~16s feels ambient, not distracting. */
 @keyframes topbarShift {
   0%   { background-position: 0% 50%; }
@@ -2009,7 +2009,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .topbar:hover { opacity: 0.95; }
 .topbar-badge {
   background: #fff;
-  color: #FA8221;
+  color: #000;
   font-size: 10px;
   font-weight: 800;
   padding: 4px 10px;
@@ -2054,7 +2054,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 <a href="https://sellvia.com/checkout/?product=custom&type_custom=free_basic_hosting" class="topbar">
   <span class="topbar-badge">Special Offer</span>
-  <span class="topbar-text">Get your FREE store + Amazon business!<span class="topbar-arrow">→</span></span>
+  <span class="topbar-text">Get your FREE store + 1,000 car accessories!<span class="topbar-arrow">→</span></span>
 </a>
 
 <!-- ═══ NAV ═══ -->
@@ -2107,18 +2107,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="hero-inner">
     <span class="hero-pill">
       <span class="pill-dot"></span>
-      <span class="pill-line1-only-desktop">Free ecom site + Instagram &amp; TikTok shop</span>
+      <span class="pill-line1-only-desktop">Free ecom site + hottest car accessories!</span>
       <span class="pill-line2">Free ecom site +</span>
-      <span class="pill-line2">Instagram &amp; TikTok shop</span>
+      <span class="pill-line2">hottest car accessories!</span>
     </span>
-    <h1 class="hero-h1">Your free store, ready for<br>
-      <span class="social-row">
-        <img src="img/Hero/insta.svg" alt="Instagram" class="brand-ig">
-        <span class="social-amp">&amp;</span>
-        <img src="img/Hero/tiktok.svg" alt="TikTok" class="brand-tt">
-      </span>
+    <h1 class="hero-h1">Your free store +<br>
+      <em>car accessories</em>
     </h1>
-    <p class="hero-sub">Turnkey ecommerce website, viral products, and shoppable social storefronts — set up for you for free.</p>
+    <p class="hero-sub">Turnkey ecommerce website, 1,000 hot-selling car accessories, and everything you need to start selling – set up for you for free.</p>
     <div class="hero-actions">
       <a href="https://sellvia.com/checkout/?product=custom&amp;type_custom=free_basic_hosting" class="btn btn-filled">Get my free store + Bonus</a>
       <p class="hero-fine">Get started in less than 60 seconds • Cancel anytime</p>
